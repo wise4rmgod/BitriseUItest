@@ -3,18 +3,14 @@ package com.dev.bitriseuitest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main2.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        login.setOnClickListener {
+        setContentView(R.layout.activity_main2)
+        signupbtn.setOnClickListener {
             startActivity(Intent(this, MainActivity3::class.java))
-        }
-
-        txt_register.setOnClickListener {
-            startActivity(Intent(this, MainActivity2::class.java))
         }
     }
 }

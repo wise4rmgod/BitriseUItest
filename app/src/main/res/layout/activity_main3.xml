@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+    <TextView
+        android:id="@+id/themeid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THEME OF THE YEAR 2021"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/theme_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="( My Year Of Goshen Anointing )"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/themeid" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/theme_text"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8:00AM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/preacherlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preacher"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/time" />
+
+        <TextView
+            android:id="@+id/preacherlistvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rev Canon Romanus"
+            app:layout_constraintTop_toBottomOf="@id/preacherlist" />
+
+        <View
+            android:id="@+id/predivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/preacherlistvalue"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/readerlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reader"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/predivider" />
+
+        <TextView
+            android:id="@+id/readerlistvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evang. Chidi Romanus"
+            app:layout_constraintTop_toBottomOf="@id/readerlist" />
+
+        <View
+            android:id="@+id/predivid"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/readerlistvalue"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/onlyreaderlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Only Lesson Reader"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/predivid" />
+
+        <TextView
+            android:id="@+id/onlyreaderlistvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evang. Chidi Romanus"
+            app:layout_constraintTop_toBottomOf="@id/onlyreaderlist" />
+
+        <View
+            android:id="@+id/prediv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/onlyreaderlistvalue"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:id="@+id/intercessorlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intercessor"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/prediv" />
+
+        <TextView
+            android:id="@+id/intercessorlistvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evang. Chidi Romanus"
+            app:layout_constraintTop_toBottomOf="@id/intercessorlist" />
+
+        <View
+            android:id="@+id/divt"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/intercessorlistvalue"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/divt">
+
+            <TextView
+                android:id="@+id/services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Services:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/servicesvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/orderofdivine"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/orderofdivine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:text="ORDER OF DIVINE SERVICE"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/divid"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/orderofdivine"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderservice_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/divid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
